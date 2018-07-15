@@ -1,11 +1,17 @@
-# blogblog
+#devcamp Portfolio
 
-####
+### Features
 
-- will do everything possible
+_nothing yet_
 
-'''ruby
-def goat
-  puts " bah bah"
+
+-realtime
+-garbage
+
+### code example
+
+``` ruby
+def my_goat
+  puts "ba ba"
 end
-'''
+```
