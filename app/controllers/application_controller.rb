@@ -5,5 +5,19 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
+end
 
+
+
+  def set_copyright
+    @copyright =  DevcampViewTool::Renderer.copyright 'Raj Dhatt', 'All rights reserved'
+  end
+
+
+module DevcampViewTool
+  class Renderer
+    def self.copyright name, msg
+      "&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
+    end
+  end
 end
