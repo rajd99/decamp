@@ -1,9 +1,10 @@
-// Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
- /*
+
+/*
  * Globals
  */
- /* Links */
+
+/* Links */
 a,
 a:focus,
 a:hover {
@@ -156,6 +157,19 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 55rem;
   }
+}
+
+/*
+ * Custom Styles
+ */
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
 }
