@@ -9,8 +9,13 @@ include Placeholder
   validates_presence_of :title, :body,  :subtitle, :main_image, :thumb_image
 
   def self.angular
-  where(subtitle: 'Angular')
-end
+    where(subtitle: 'Angular')
+  end
+
+  def self.by_position
+   order("position ASC")
+ end
+
 
 scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 
