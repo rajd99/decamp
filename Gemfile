@@ -15,6 +15,10 @@ gem 'font-awesome-rails', '~> 4.7'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'mini_magick', '~> 4.8'
+gem 'dotenv-rails', '~> 2.5'
+gem 'carrierwave', '~> 1.0'  
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
