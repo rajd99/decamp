@@ -8,7 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
-
+gem 'twitter', '~> 6.2'
+gem 'redis', '~> 4.0', '>= 4.0.2'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.3'
 gem 'font-awesome-rails', '~> 4.7'
@@ -18,7 +19,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'mini_magick', '~> 4.8'
 gem 'dotenv-rails', '~> 2.5'
-gem 'carrierwave', '~> 1.0'  
+gem 'carrierwave', '~> 1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -62,3 +63,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+ruby "2.4.1"
