@@ -1,12 +1,9 @@
 @import "bootstrap";
 @import "jquery-ui";
 
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
-}
+
 
 .navbar {
-  margin-bottom: 0;
 }
 
 .jumbotron {
@@ -22,13 +19,39 @@ body {
 
 .jumbotron-heading {
 
-  font-weight: 700;
+  font-weight: 900;
+  font-family: fantasy,impact;
+  font-stretch: extra-condensed;
+  font-size: 55px;
+  color: #b8860b
+}
+
+.index-header{
+  font-family: Book Antiqua;
+  text-align: center;
+  font-weight: 900;
+  font-size: 61px;
+  color: #708090;
+  font-stretch: extra-condensed;
+
+}
+.portfolio-title{
+
+  font-weight: 500;
   font-family: Impact, fantasy;
   font-stretch: extra-condensed;
+  color: #D2691E;
+  font-style: oblique;
 }
 
 .jumbotron .container {
   max-width: 40rem;
+}
+
+.portfolio-subtitle {
+  color:#00008B;
+  font-weight: bold;
+  font-style: Marker Felt, fantasy;
 }
 
 .album {
@@ -36,6 +59,10 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #f7f7f7;
+}
+
+.portfolio-body{
+
 }
 
 .card {

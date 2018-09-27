@@ -10,7 +10,7 @@ end
 
 
   def set_copyright
-    @copyright =  DevcampViewTool::Renderer.copyright 'Ambala Jatten', 'All rights reserved'
+    @copyright =  DevcampViewTool::Renderer.copyright 'Ambala Jattan', 'All rights reserved'
   end
 
 
