@@ -21,7 +21,10 @@ body {
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+
+  font-weight: 700;
+  font-family: Impact, fantasy;
+  font-stretch: extra-condensed;
 }
 
 .jumbotron .container {
@@ -48,7 +51,9 @@ body {
 }
 
 .card-text {
-  font-size: 85%;
+  font-size: 20px;
+  font-family: Impact, fantasy
+
 }
 
 footer {
