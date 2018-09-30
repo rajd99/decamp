@@ -5,6 +5,8 @@
  * Globals
  */
 
+
+
 @media (min-width: 48em) {
   html {
     font-size: 18px;
@@ -14,6 +16,12 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #555;
+}
+
+hr{
+  color: #1e90ff;
+background-color: #1e90ff;
+height: 5px;
 }
 
 h1, .h1,
@@ -26,6 +34,16 @@ h6, .h6 {
   font-weight: normal;
   color: #333;
 }
+
+.comment{
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  background-color: red;
+  font-size: 44px;
+}
+
+
+
 
 
 /*
@@ -143,12 +161,26 @@ h6, .h6 {
  */
 
 .blog-title-show {
-  font-style: Alfa Slab One;
+  font-style: upper-roman;
 
 }
 
 .blog-post {
   margin-bottom: 4rem;
+  font-color:#d2691e;
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 18em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
 }
 .blog-post-title {
   margin-bottom: .25rem;

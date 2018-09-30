@@ -3,7 +3,12 @@
 
 
 
-.navbar {
+.navbar1 {
+  padding-top: 0rem;
+}
+
+
+.portolfio-container{
 }
 
 .jumbotron {
@@ -17,6 +22,8 @@
   margin-bottom: 0;
 }
 
+
+
 .jumbotron-heading {
 
   font-weight: 900;
@@ -27,21 +34,30 @@
 }
 
 .index-header{
-  font-family: Book Antiqua;
+
+  font-family: 'Pacifico', cursive;
   text-align: center;
   font-weight: 900;
   font-size: 61px;
-  color: #708090;
+  color: #8b4513;
   font-stretch: extra-condensed;
+  padding-bottom: 44px;
+  text-decoration: underline;
 
 }
 .portfolio-title{
 
-  font-weight: 500;
-  font-family: Impact, fantasy;
+  font-weight: 100;
+  font-family: 'Ultra', serif;
   font-stretch: extra-condensed;
-  color: #D2691E;
-  font-style: oblique;
+  color: black;
+  font-size: 28px;
+}
+
+hr{
+  color: #1e90ff;
+background-color: #1e90ff;
+height: 4px;
 }
 
 .jumbotron .container {
@@ -52,47 +68,81 @@
   color:#00008B;
   font-weight: bold;
   font-style: Marker Felt, fantasy;
+  font-size: 18px;
 }
 
 .album {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  background-color: 	#f5f5dc;
 }
 
 .portfolio-body{
+background-color: #f5f5dc;
+padding-bottom: 80px;
+font: bold;
 
 }
 
+.container{
+
+}
 .card {
   float: left;
   width: 33.333%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+  background-color: #f5f5dc;
 }
 
 .card > img {
   margin-bottom: .75rem;
 }
 
-.card-text {
-  font-size: 20px;
-  font-family: Impact, fantasy
-
+.container{
 }
+
+.card-text {
+  font-size: 22px;
+  font-family: Impact,fantasy;
+  background-color: #f5f5dc;
+  text-align: center;
+}
+
+.main-show{
+  background-color: #f5f5dc;
+  width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 48px;
+}
+
+
+
 
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: #343a40;
+  position: bottom, absolute;
 }
+
+
+
+
+
 
 footer p {
   margin-bottom: .25rem;
+  background-color: #343a40;
 }
 
 /* Custom styles */
  .portfolio-container {
   padding-top: 30px;
+  background-color: #f5f5dc;
+
 }

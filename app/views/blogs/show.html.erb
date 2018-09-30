@@ -24,7 +24,11 @@
   </p>
 
   <%= render 'comments/comment_form' %>
+  <hr>
+<h5>COMMENTS:</h5>
+  <div class"comment">
   <div id="comments" data-blog-id="<%= @blog.id %>">
      <%= render @blog.comments %>
    </div>
+ </div>
 </div>

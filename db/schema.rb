@@ -31,10 +31,12 @@ ActiveRecord::Schema.define(version: 20180918092318) do
     t.text "content"
     t.bigint "user_id"
     t.bigint "blog_id"
+    t.bigint "user_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["blog_id"], name: "index_comments_on_blog_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
+    t.index ["user_name"], name: "index_comments_on_user_name"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|

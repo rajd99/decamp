@@ -7,19 +7,21 @@
     <%= csrf_meta_tags %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
-
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-      <%= render 'shared/portfolio_nav' %>
+      <%= render 'portfolios/portfolio_nav' %>
       <%= yield %>
 
   </body>
 
-    <%= render 'shared/portfolio_footer' %>
 
-
-    <%= source_helper("application") %>
+<div class="footer-all">
+   <%= render 'shared/portfolio_footer' %>
+    <%= source_helper("application") %></div>
+  
 </html>
