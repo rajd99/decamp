@@ -8,7 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
-gem 'twitter', '~> 6.2'
+
 gem 'redis', '~> 4.0', '>= 4.0.2'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.3'

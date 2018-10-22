@@ -133,11 +133,13 @@ body {
 /*
  * Footer
  */
-
+/*
 .mastfoot {
   color: rgba(255,255,255,.5);
+  background-color: black;
+  width : 180px;
 }
-
+*/
 
 /*
  * Affix and center
@@ -208,9 +210,7 @@ body {
   background: image-url('luxmi.jpg') no-repeat;
   background-size: cover;
 }
- .app-footer {
-  color: white;
-}
+
 
 .app-card-container {
   color: black;
@@ -227,4 +227,18 @@ body {
 
 .app-card-container a {
   color: blue;
+}
+/*footer*/
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #384452;
+  position: bottom, absolute;
+}
+
+
+
+footer p {
+  margin-bottom: .25rem;
+  background-color: #384452;
 }

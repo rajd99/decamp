@@ -6,31 +6,32 @@
 
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:600i|Roboto" rel="stylesheet">
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Diplomata" rel="stylesheet">
   </head>
 
   <body>
 
-    <%= render 'shared/blog_nav' %>
-    <%= render 'shared/blog_masthead' %>
+      <%= render 'shared/blog_nav' %>
 
-    <div class="container">
+    <!-- /container -->
 
-      <div class="row">
+<%= render 'shared/blog_masthead' %>
 
+      <div>
         <%= yield %>
+    </div>
 
-        <%= render 'shared/blog_sidebar' %>
-      </div>
 
       <%= render 'shared/blog_footer' %>
 
       <%= source_helper("blog") %>
+
     </div>
+  </div>
   </body>
-</html>
+  </html>

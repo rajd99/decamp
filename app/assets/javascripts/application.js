@@ -18,5 +18,5 @@
 //= require html.sortable
 //= require cable
 //= require turbolinks
+//= require_self
 //= require_tree
-//= require bootstrap-sprockets

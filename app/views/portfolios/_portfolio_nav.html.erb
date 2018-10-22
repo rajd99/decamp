@@ -1,33 +1,16 @@
-<div class="navbar1">
-  <div class="pos-f-t">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <div class="col-sm-8 py-4">
-             <h4 class="text-white">Ambala Jattan</h4>
-             <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-           </div>
-           <div class="col-sm-4 py-4">
-             <ul class="list-unstyled">
-            <li><%= link_to "Home", root_path, class: 'text-white' %></li>
-            <li><%= link_to "About Me", about_me_path, class: 'text-white' %></li>
-            <li><%= link_to "Contact", contact_path, class: 'text-white' %></li>
-            <li><%= link_to "Posts", blogs_path, class: 'text-white' %></li>
-            <li><%= link_to "Projects", portfolios_path, class: 'text-white' %></li>
-            <li><%= login_helper 'text-white' %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+
+<nav class="navbar navbar-expand-sm   navbar-dark sticky-top" style="background-color: #384452;">
+
+  <h3 class="navbar-brand"  >AMBALA JATTAN</h3>
 
 
-  
+    <ul class="navbar-nav ml-auto">
 
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-  </div>
-
-</div>
+      <li class="nav-item"><%= link_to "Home", root_path , class: 'nav-link'%></li>
+      <li class="nav-item"><%= link_to "About Us", about_me_path, class: 'nav-link' %></li>
+      <li class="nav-item"><%= link_to "Contact", contact_path, class: 'nav-link' %></li>
+      <li class="nav-item"><%= link_to "Posts", blogs_path, class: 'nav-link' %></li>
+      <li class="nav-item"><%= link_to "Projects", portfolios_path, class: 'nav-link' %></li>
+      <%= login_helper 'nav-link' %>
+    </ul>
+  </nav>
