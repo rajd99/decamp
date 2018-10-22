@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+@import "font-awesome";
 /*
  * Globals
  */
@@ -32,7 +32,9 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: fantasy;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
 }
 /*
  * Base structure
