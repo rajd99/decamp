@@ -1,15 +1,72 @@
-<nav class="navbar navbar-expand-sm nav-justified  navbar-dark sticky-top" style="background-color: #384452;">
+ <!--- <body>
+<nav class="navbar navbar-expand-lg   navbar-dark bg-dark">
+ <div class="container">
+  <h3 class="navbar-brand">AMBALA JATTAN</h3>
 
-  <h3 class="navbar-brand"  >AMBALA JATTAN</h3>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+  data-target="#navbarResponsive" aria-controls="navbarResponsive"
+  aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-    <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <%= link_to "Home", root_path , class: 'nav-link'%>
+              <span class="sr-only">(current)</span>
+            </li>
+              <li class="nav-item active">
+                <%= link_to "About", about_me_path, class: 'nav-link' %>
+                </li>
+                <li class="nav-item active">
+                    <%= link_to "Contact", contact_path, class: 'nav-link' %>
+                    </li>
 
-      <li class="nav-item"><%= link_to "Home", root_path , class: 'nav-link'%></li>
-      <li class="nav-item"><%= link_to "About", about_me_path, class: 'nav-link' %></li>
-      <li class="nav-item"><%= link_to "Contact", contact_path, class: 'nav-link' %></li>
-      <li class="nav-item"><%= link_to "Posts", blogs_path, class: 'nav-link' %></li>
-      <li class="nav-item"><%= link_to "Projects", portfolios_path, class: 'nav-link' %></li>
-      <%= login_helper 'nav-link' %>
+                  <li class="nav-item active">
+                        <%= link_to "Posts", blogs_path, class: 'nav-link' %>
+                  </li>
+                  <li class="nav-item active">
+                        <%= link_to "Projects", portfolios_path, class: 'nav-link' %>
+                    </li>
+                    <%= login_helper 'nav-link' %>
+
     </ul>
+
+  </nav>
+</div>
+</body>-->
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #384452;">
+    <div class="container">
+      <div class="navbar-brand" >Ambala Jattan</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <%= link_to "Home", root_path , class: 'nav-link'%>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About", about_me_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+              <%= link_to "Contact", contact_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+          <%= link_to "Posts", blogs_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Projects", portfolios_path, class: 'nav-link' %>
+          </li>
+
+            <%= login_helper 'nav-link' %>
+
+        </ul>
+      </div>
+    </div>
   </nav>

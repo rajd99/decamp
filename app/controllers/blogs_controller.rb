@@ -8,7 +8,6 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.page(params[:page]).per(5).order('created_at DESC')
     @page_title = "My Portfolio Blog"
-    @blog_img=params[:thumb_image]
   end
 
   # GET /blogs/1
@@ -85,7 +84,7 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body, :thumb_image)
+      params.require(:blog).permit(:title, :body, :topic_id)
     end
 
 
