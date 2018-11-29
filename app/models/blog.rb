@@ -6,7 +6,7 @@ friendly_id :title, use: :slugged
 
 has_many :comments, dependent: :destroy
 
-validates_presence_of :title, :body, :topic_id
+validates_presence_of :title, :body
 
 mount_uploader :thumb_image, BlogUploader
 
