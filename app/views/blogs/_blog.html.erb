@@ -1,3 +1,4 @@
+
 <div class="container index-blog">
   <div class="row justify-center my-row">
 
@@ -10,7 +11,7 @@
       <p>
 
        <% if blog.body.length > 350 %>
-               <%= truncate(blog.body, length: 350) %>
+               <%= truncate( strip_tags(markdown(blog.body)), length: 350) %>
 
                <% end %>
       </p>
