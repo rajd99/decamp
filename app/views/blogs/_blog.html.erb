@@ -1,20 +1,24 @@
 
+
+
+
+<th><%= sort_link(@q, :title) %></th>
+
+<table>
 <div class="container index-blog">
   <div class="row justify-center my-row">
-
     <div class="col-md-10 col-sm-10 my-col">
-      <div class="titleindex"><%= blog.title %></strong></div>
-
-        <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
+      <table>
 
 
+            <div class="titleindex"><%= blog.title %></strong></div
+            <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
       <p>
-
-       <% if blog.body.length > 350 %>
-               <%= truncate( strip_tags(markdown(blog.body)), length: 350) %>
-
-               <% end %>
+            <% if blog.body.length > 350 %>
+            <%= truncate( strip_tags(markdown(blog.body)), length: 350) %>
+                    <% end %>
       </p>
+
 
       <p>
         <%= link_to "READ MORE", blog_path(blog), class: "btn btn-primary" %>
@@ -22,12 +26,10 @@
 
           <i class="icon-calendar"></i> <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now)%> ago</p>
 
-
         </p>
         <hr>
 
         <div>
       </div>
     </div>
-  </div>
-</div>
+    </table>

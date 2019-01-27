@@ -1,3 +1,18 @@
+<div class = "search-bar">
+<%= search_form_for @q  do |f| %>
+  <%= f.label :title_or_body_cont,"    KEY WORD  " %>
+  <%= f.search_field :title_or_body_cont %>
+  <%= f.submit "Search" %>
+<% end %>
+</div>
+
+<div class = "new-button">
+<% if logged_in?(:site_admin) %>
+   <p class="blog-post-meta">
+  <%= link_to 'New Post', new_blog_path,  class: "btn-warning"%>
+  <% end %>
+   </p>
+   </div>
 
 <div class="col-sm-8 blog-main">
     <%= render @blogs %>

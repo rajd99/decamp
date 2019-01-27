@@ -6,8 +6,11 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.page(params[:page]).per(5).order('created_at DESC')
-    @page_title = "My Portfolio Blog"
+    @q = Blog.ransack(params[:q])
+    @blogs = @q.result(distinct: true).page(params[:page]).per(5).order('created_at DESC')
+
+    # @blogs = Blog.page(params[:page]).per(5).order('created_at DESC')
+    # @page_title = "My Portfolio Blog"
   end
 
   # GET /blogs/1

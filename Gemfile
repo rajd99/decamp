@@ -42,6 +42,7 @@ gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
+gem 'ransack'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
